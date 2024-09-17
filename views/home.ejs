@@ -21,7 +21,7 @@
   <ul>
     <% posts.forEach(post => { %>
       <li>
-        <a href="/post/<%= post.id %>"><%= post.title %> <%= post.content %></a>
+        <h1></h1><%= post.title %> <%= post.content %></h1>
         <form action="/delete/<%= post.id %>" method="POST" style="display:inline;">
           <button type="submit">Delete</button>
         </form>
